@@ -12,6 +12,5 @@ public class AppConfig {
     @Scope("prototype")
     Apple getApple() {
         return new Apple();
-        return new Apple();
     }
 }
