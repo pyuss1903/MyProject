@@ -9,10 +9,8 @@ import org.springframework.context.ApplicationContext;
 public class MyProjectApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(MyProjectApplication.class, args);
-        Apple test1 = context.getBean(Apple.class);
-        Apple test2 = context.getBean(Apple.class);
-        System.out.println(test1.hashCode());
-        System.out.println(test2.hashCode());
+        DBService dbService = context.getBean(DBService.class);
+        System.out.println(dbService.getData());
 	}
 
 }
